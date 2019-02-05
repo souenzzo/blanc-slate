@@ -11,9 +11,13 @@ Clone the project, then inside project dir
 ```bash
 $ pipenv sync
 ```
+- Create the migrations for schedule
+```bash
+$ pipenv run python manage.py makemigrations schedule
+```
 - Create the SQLite database
 ```bash
-$  pipenv run python manage.py migrate
+$ pipenv run python manage.py migrate
 ```
 - Create your first user
 ```bash
